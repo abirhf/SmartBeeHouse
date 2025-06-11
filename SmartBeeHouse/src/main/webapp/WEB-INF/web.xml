@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         id="WebApp_ID" version="6.0">
+
+  <display-name>SmartBeeHouse</display-name>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+      <servlet-name>FermeServlet</servlet-name>
+      <servlet-class>Servlet.ferme_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>FermeServlet</servlet-name>
+      <url-pattern>/fermes</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+      <servlet-name>SiteServlet</servlet-name>
+      <servlet-class>Servlet.SiteApiculture_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>SiteServlet</servlet-name>
+      <url-pattern>/sites</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+      <servlet-name>RucheServlet</servlet-name>
+      <servlet-class>Servlet.ruche_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>RucheServlet</servlet-name>
+      <url-pattern>/ruches</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Dashboard1Servlet</servlet-name>
+    <servlet-class>Servlet.Dashboard1Servlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>Dashboard1Servlet</servlet-name>
+    <url-pattern>/dashboard1</url-pattern>
+</servlet-mapping>
+  <servlet>
+    <servlet-name>Dashboard2Servlet</servlet-name>
+    <servlet-class>Servlet.Dashboard2Servlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>Dashboard2Servlet</servlet-name>
+    <url-pattern>/dashboard2</url-pattern>
+</servlet-mapping>
+  
+
+
+  
+
+</web-app>
